@@ -1,0 +1,507 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Playwrite ES Deco', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+nav {
+	background-color: darkslategrey;
+	color: blanchedalmond;
+	padding: 20px 50px;
+}
+
+.navLeft {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navLeft h2 {
+	font-family: 'Playwrite ES Deco', sans-serif;
+	color: blanchedalmond;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.navMiddle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navRight,
+a {
+	text-decoration: none;
+	font-family: 'Playwrite ES Deco', sans-serif;
+	color: blanchedalmond;
+	font-size: 30px;
+	font-weight: 400;
+	padding-left: 0;
+}
+
+.menuItem {
+	font-family: 'Playwrite MX', sans-serif;
+	font-weight: 300;
+	margin-right: 30px;
+	margin-left: 30px;
+	cursor: pointer;
+	color: blanchedalmond;
+	transition: all 0.5s linear;
+}
+
+.menuItem:hover:nth-child(1) {
+	color: tomato;
+	transition: all 0.5s linear;
+}
+
+.menuItem:hover:nth-child(2) {
+	color: chocolate;
+	transition: all 0.5s linear;
+}
+
+.menuItem:hover:nth-child(3) {
+	color: cadetblue;
+	transition: all 0.5s linear;
+}
+
+.menuItem:hover:nth-child(4) {
+	color: darkolivegreen;
+	transition: all 0.5s linear;
+}
+
+.menuItem:hover:nth-child(5) {
+	color: palevioletred;
+	transition: all 0.5s linear;
+}
+
+.slider {
+	background-color: lightgrey;
+	overflow: hidden;
+}
+
+.sliderWrapper {
+	display: flex;
+	width: 500vw;
+	transition: all 1s ease-in-out;
+}
+
+.sliderItem {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.sliderBg {
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 560px 0 0 560px;
+	border-color: transparent transparent transparent tomato;
+	transform: rotate(60deg);
+	position: absolute;
+}
+
+.sliderImg {
+	z-index: 1;
+}
+
+.sliderTitle {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	font-size: 40px;
+	z-index: 1;
+}
+
+.sliderPrice {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	font-size: 50px;
+	font-weight: 300;
+	z-index: 1;
+	border-bottom: solid 2px black;
+}
+
+.buyButton {
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	font-size: 25px;
+	font-weight: 200;
+	font-family: 'Playwrite MX', sans-serif;
+	background-color: black;
+	color: blanchedalmond;
+	z-index: 1;
+	cursor: pointer;
+	padding: 5px;
+	transition: all 0.2s linear;
+}
+
+.buyButton:hover {
+	background-color: whitesmoke;
+	color: black;
+	transition: all 0.2s linear;
+}
+
+.sliderItem:nth-child(1) .sliderBg {
+	border-color: transparent transparent transparent tomato;
+}
+
+.sliderItem:nth-child(2) .sliderBg {
+	border-color: transparent transparent transparent chocolate;
+}
+
+.sliderItem:nth-child(3) .sliderBg {
+	border-color: transparent transparent transparent cadetblue;
+}
+
+.sliderItem:nth-child(4) .sliderBg {
+	border-color: transparent transparent transparent darkolivegreen;
+}
+
+.sliderItem:nth-child(5) .sliderBg {
+	border-color: transparent transparent transparent palevioletred;
+}
+
+.features {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px;
+	font-family: 'Playwrite MX', sans-serif;
+	font-weight: 250;
+	font-size: 10px;
+	background-color: lightgoldenrodyellowblue;
+}
+
+.feature {
+	display: flex;
+	flex-direction: column;
+}
+
+.featureIcon {
+	width: 50px;
+	height: 50px;
+}
+
+.featureTitle {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.featureDesc {
+	color: grey;
+	width: 50%;
+	height: 100px;
+}
+
+.product {
+	height: 100vh;
+	background-color: whitesmoke;
+	position: relative;
+	font-size: 12px;
+}
+
+.payment {
+	width: 580px;
+	height: 580px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	padding: 10px 50px;
+	display: none;
+	flex-direction: column;
+	-webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+	transition: all 1.2 ease-in-out;
+}
+
+.payTitle {
+	font-family: 'Playwrite MX', sans-serif;
+	font-size: 20px;
+	color: darkslateblue;
+}
+
+label {
+	font-size: 14px;
+	font-weight: 200;
+}
+
+.payInput {
+	padding: 10px;
+	margin: 10px 0px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+.payInput::placeholder {
+	color: lightblue;
+}
+
+.cardIcons {
+	display: flex;
+}
+
+.cardIcon {
+	margin-right: 10px;
+}
+
+.cardInfo {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sm {
+	width: 30%;
+}
+
+.payButton {
+	font-family: 'Playwrite MX', sans-serif;
+	height: 40px;
+	bottom: -40;
+	width: 50%;
+	left: 0;
+	background-color: black;
+	color: blanchedalmond;
+	transition: all 0.2s linear;
+	cursor: pointer;
+}
+
+.payButton:hover {
+	background-color: blanchedalmond;
+	color: black;
+	transition: all 0.2s linear;
+}
+
+.close {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-color: black;
+	color: blanchedalmond;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding: 2px;
+	transition: all 0.2s linear;
+}
+
+.close:hover {
+	background-color: blanchedalmond;
+	color: black;
+	transition: all 0.2s linear;
+}
+
+.productImg {
+	width: 50%;
+}
+
+.productDetails {
+	position: absolute;
+	top: 10%;
+	right: 0;
+	width: 40%;
+	padding: 50px;
+}
+
+.productTitle {
+	font-size: 50px;
+	font-weight: 400;
+}
+
+.productDesc {
+	font-size: 10px;
+	color: gray;
+}
+
+.colors,
+.sizes {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.color {
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+	background-color: black;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.color:last-child {
+	background-color: darkblue;
+}
+
+.size {
+	padding: 5px 20px;
+	border: 1px solid black;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+.size:hover {
+	background-color: black;
+	color: whitesmoke;
+	transition: all 0.2s linear;
+}
+
+.productButton {
+	float: right;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: 'Playwrite MX', sans-serif;
+	background-color: black;
+	color: blanchedalmond;
+	z-index: 1;
+	cursor: pointer;
+	padding: 5px;
+	transition: all 0.2s linear;
+}
+
+.productButton:hover {
+	background-color: whitesmoke;
+	color: black;
+	transition: all 0.2s linear;
+}
+
+footer {
+	display: flex;
+}
+
+.footerRight {
+	flex: 1;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.fInput {
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+.fButton {
+	padding: 5px;
+	background-color: black;
+	color: blanchedalmond;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+
+.fButton:hover {
+	background-color: blanchedalmond;
+	color: black;
+	transition: all 0.2s linear;
+}
+
+.fIcons {
+	display: flex;
+	cursor: pointer;
+}
+
+.fIcon {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.copyright {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+	nav {
+		padding: 10px;
+		font-size: 10px;
+	}
+
+	.navLeft h2 {
+		font-size: 15px;
+	}
+
+	.navRight a {
+		font-size: 15px;
+	}
+
+	.menuItem {
+		margin: 10px;
+		font-weight: bold;
+		font-size: 0.5em;
+	}
+
+	.sliderImg {
+		height: 80%;
+		width: 80%;
+	}
+
+	.sliderBg {
+		border-width: 230px 0 0 230px;
+	}
+
+	.sliderTitle {
+		display: none;
+	}
+
+	.sliderPrice {
+		top: unset;
+		bottom: 0;
+		left: 0;
+		font-size: 25px;
+		margin-left: 10px;
+	}
+
+	.buyButton {
+		bottom: 0;
+		right: 0;
+		top: unset;
+		font-size: 10px;
+		height: 10%;
+		width: 30%;
+		margin-right: 10px;
+	}
+	.features {
+		flex-direction: column;
+	}
+
+	.productImg {
+		margin-top: 100px;
+		height: 30%;
+		width: 40%;
+	}
+
+	.productTitle {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.payment {
+		width: 90%;
+		padding: 0;
+	}
+
+	.payTitle {
+		font-size: 10px;
+	}
+
+	label {
+		font-size: 10px;
+	}
+}

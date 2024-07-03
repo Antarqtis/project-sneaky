@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google fonts link №1 -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Playwrite+ES+Deco:100,200,300,regular"
+			rel="stylesheet"
+		/>
+		<!-- Google fonts link №2 -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Playwrite+MX:100,200,300,regular"
+			rel="stylesheet"
+		/>
+		<!-- Font awesome link  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
+		<!-- CSS link  -->
+		<link rel="stylesheet" href="loginstyle.css" />
+		<!-- JavaScript -->
+		<script src="applogin.js"></script>
+		<title>Login & Register</title>
+	</head>
+	<body>
+		<!-- Login  -->
+		<div class="container">
+			<h2>Login</h2>
+			<form action="" method="post">
+				<label for="username">Username</label>
+				<input
+					type="text"
+					id="username"
+					name="username"
+					required
+					placeholder="Giorgi"
+				/>
+				<label for="password">Password</label>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					required
+					placeholder="********"
+				/>
+				<a href="index.html">Login</a>
+			</form>
+			<!-- Register  -->
+			<p>-----or-----</p>
+			<h2>Register</h2>
+			<form action="" method="post">
+				<label for="username">Username</label>
+				<input
+					type="text"
+					id="username"
+					name="username"
+					required
+					placeholder="Giorgi"
+				/>
+				<label for="email">Email</label>
+				<input
+					type="email"
+					name="email"
+					id="eMail"
+					placeholder="username@mail.ge"
+				/>
+				<label for="password">Password</label>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					required
+					maxlength="30"
+					placeholder="******"
+				/>
+				<label for="country">Country</label>
+				<input type="text" name="country" id="country" placeholder="Georgia" />
+				<label for="number">Number</label>
+				<input type="number" name="number" id="numBer" placeholder="+995 " />
+				<a href="log.html">Register</a>
+			</form>
+		</div>
+	</body>
+</html>
